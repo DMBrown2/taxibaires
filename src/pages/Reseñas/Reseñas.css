@@ -1,0 +1,104 @@
+.section-reseñas {
+  padding: 4rem 2rem;
+  margin-top: 75px;
+  background: var(--light-color);
+  text-align: center;
+}
+
+
+/* Carrusel horizontal */
+.reseñas-scroll {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  padding: 12px;
+}
+.reseñas-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.reseña-card {
+  flex: 0 0 100%; 
+  scroll-snap-align: start;
+  background: #fff;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  margin: 0 0.5rem;
+  text-align: center;
+}
+
+.reseña-foto {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  object-fit: cover;
+}
+
+.reseña-nombre {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.reseña-estrellas {
+  color: #fbc02d;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.reseña-texto {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* Puntitos */
+.reseñas-dots {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.6rem;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  background: #bbb;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.dot.active {
+  background: #111;
+  transform: scale(1.2);
+}
+
+/* Botón "ver más" */
+.ver-mas-container {
+  margin-top: 2rem;
+}
+
+.btn-ver-mas {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background-color: #111;
+  color: #fff;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.btn-ver-mas:hover {
+  background-color: #333;
+}
+
+/* 🖥️ Desktop: 4 reseñas visibles */
+@media (min-width: 1024px) {
+  .reseña-card {
+    flex: 0 0 25%; /* 4 por página */
+  }
+}

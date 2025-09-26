@@ -1,0 +1,69 @@
+.contacto-section {
+  width: 100%;
+  padding: 4rem 1.5rem;
+  background-color: var(--color-primario);
+}
+
+.contacto-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contacto-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.contacto-subtitle {
+  color: #555;
+  margin-bottom: 3rem;
+}
+
+.contacto-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.contacto-card {
+  background: #f9f9f9;
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-decoration: none;
+  color: inherit;
+}
+
+.contacto-card.no-click {
+  cursor: default;
+}
+
+.contacto-icon {
+  font-size: 2rem;
+  color: var(--color-secundario);
+  margin-bottom: 0.5rem;
+  transition: color 0.2s ease;
+}
+
+.contacto-card:hover .contacto-icon {
+  color: var(--lighter-color); /* verde más oscuro al hover */
+}
+
+.contacto-label {
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.contacto-link {
+  color: #2563eb; /* azul profesional */
+  font-size: 0.95rem;
+}
+
+@media (min-width: 768px) {
+  .contacto-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

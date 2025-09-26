@@ -1,0 +1,125 @@
+.sobre-nosotros-section {
+  padding: 4rem 1rem;
+  background-color: var(--light-color); 
+}
+
+.sobre-nosotros-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  
+}
+
+.flota-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  margin-top: 2rem;
+}
+
+.vehiculo-card {
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* .vehiculo-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.12);
+} */
+
+.vehiculo-img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.vehiculo-content {
+  padding: 1.5rem;
+}
+
+.vehiculo-nombre {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #1f2937;
+}
+
+.vehiculo-descripcion {
+  font-size: 0.95rem;
+  color: #4b5563;
+  line-height: 1.4;
+}
+
+.nosotros-cta{
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.porque-elegirnos-container {
+  max-width: 1200px;
+  margin: 4rem auto 0;
+  padding: 0 1rem;
+  background-color: var(--color-primario);
+}
+
+.caracteristicas-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  margin-top: 2rem;
+}
+
+.caracteristica-card {
+  background: var(--light-color);
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  padding: 2rem 1.5rem;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* .caracteristica-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.12);
+} */
+
+.caracteristica-card .icono {
+  font-size: 2rem;
+  color: var(--lighter-color);
+  margin-bottom: 1rem;
+}
+
+.caracteristica-card h4 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: #1f2937;
+}
+
+.caracteristica-card p {
+  font-size: 0.95rem;
+  color: #4b5563;
+  line-height: 1.4;
+}
+
+.porqueelegirnos-cta{
+  margin-top: 3rem;
+  text-align: center;
+}
+
+
+/* 📱 Mobile */
+@media (max-width: 768px) {
+  .vehiculo-img {
+    height: 140px;
+  }
+
+  .vehiculo-nombre {
+    font-size: 1.1rem;
+  }
+
+  .vehiculo-descripcion {
+    font-size: 0.9rem;
+  }
+}

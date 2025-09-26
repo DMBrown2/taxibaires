@@ -1,0 +1,68 @@
+.custom-btn {
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.9rem 2rem;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  border: none;
+}
+
+/* === Tamaños === */
+.custom-btn.small {
+  font-size: 0.9rem;
+  padding: 0.5rem 1.2rem;
+  font-weight: 500;
+}
+
+.custom-btn.medium {
+  font-size: 1rem;
+  padding: 0.9rem 2rem;
+}
+
+.custom-btn.large {
+  font-size: 1.25rem;
+  padding: 1.2rem 2.5rem;
+}
+
+
+/* === Variantes === */
+
+/* Primary (oscuro) */
+.custom-btn.primary {
+  background-color: var(--color-terciario); /* gris oscuro */
+  color: #fff;
+}
+
+.custom-btn.primary:hover {
+  background-color: var(--lighter-color);
+  transform: translateY(-2px);
+}
+
+
+/* Botón secundario (claro) */
+.custom-btn.secondary {
+  background-color: var(--color-primario); /* color fondo */
+  color: var(--color-terciario);
+  font-family: var(--font);
+}
+
+.custom-btn.secondary:hover {
+  background-color: #d1d5db;
+  transform: translateY(-2px);
+}
+
+
+/* Botón contorno */
+.custom-btn.outline {
+  background-color: transparent;
+  color: var(--color-terciario);
+  border: 2px solid var(--lighter-color);
+}
+
+.custom-btn.outline:hover {
+  background-color: var(--lighter-color);
+  color: var(--color-terciario);
+  transform: translateY(-2px);
+  font-weight: 700;
+}
