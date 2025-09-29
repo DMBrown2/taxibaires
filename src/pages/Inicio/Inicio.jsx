@@ -10,13 +10,14 @@ import Contacto from '../Contacto/Contacto'
 
 export default function Inicio() {
   return (
-    <>
+    <section id='inicio'>
+      
       <Header />
       <Banner />
       <Servicios />
-      
       {/* SOBRE NOSOTROS CON FOTOS DE FLOTA Y PORQUE ELEGIRNOS */}
       <SobreNosotros /> 
+
       {/* RESEÑAS */}
       <Reseñas />
 
@@ -25,10 +26,6 @@ export default function Inicio() {
 
       <Footer />
 
-     
-
-
-
-    </>
+    </section>
   )
 }

@@ -1,9 +1,7 @@
-.sobre-nosotros-section {
-  padding: 4rem 1rem;
-  background-color: var(--light-color); 
-}
 
 .sobre-nosotros-container {
+  padding: 4rem 1rem;
+  background-color: var(--light-color); 
   max-width: 1200px;
   margin: 0 auto;
   

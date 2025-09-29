@@ -5,6 +5,7 @@ import Contacto from './pages/Contacto/Contacto';
 import Nosotros from './pages/Nosotros/Nosotros';
 import Servicios from './pages/Servicios/Servicios';
 import Reseñas from './pages/Reseñas/Reseñas';
+import FloatingButtons from './components/FloatingButtons/FloatingButtons';
 
 
 
@@ -36,6 +37,7 @@ function App() {
 
           </Route>
       </Routes>
+      <FloatingButtons />
     </>
   )
 }

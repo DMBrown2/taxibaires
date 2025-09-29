@@ -16,6 +16,7 @@ export default function Footer() {
 
         {/* Navegación */}
         <nav className="footer-nav">
+          <a href="#inicio">Inicio</a>
           <a href="#servicios">Servicios</a>
           <a href="#sobre-nosotros">Sobre Nosotros</a>
           <a href="#reseñas">Reseñas</a>

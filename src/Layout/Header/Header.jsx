@@ -1,60 +1,109 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { useRef } from 'react';
 import './Header.css';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-scroll';
 import logo from '../../assets/images/header/logo.jpg';
 
 
 export default function Header() {
+const burgerRef = useRef();
 
-
+  // Función para cerrar el menú
+  const closeMenu = () => {
+    if (burgerRef.current) {
+      burgerRef.current.checked = false;
+    }
+  };
 
   return (
     <div className="main-header">
       {/* MENU HAMBURGUESA  */}
-      <input type="checkbox" id="burger" className="input-burger" />
+      <input type="checkbox" id="burger" className="input-burger" ref={burgerRef} />
       <label className="burger-container" htmlFor="burger">
         <div className="burger" />
       </label>
       {/* CLAIM + LOGO + USER INFO  */}
       <div className="contenedor-logo">
-        <NavLink to="/" className="nav-link">
+        <a href="#inicio" className="nav-link">
           <img
             className="logo"
             src={logo}
             alt="LOGO"
           />
-        </NavLink>
+        </a>
       </div>
 
-      {/* //MAIN NAV */}
+      {/* Overlay para cerrar el menú */}
+      <div
+        className="nav-overlay"
+        onClick={closeMenu}
+      />
+
+    {/* MAIN NAV */}
       <nav className="main-nav">
         <ul className="nav-list">
-          {/* Enlaces del menu de navegacion */}
           <li className="nav-item">
-            <NavLink to="/" className="nav-link">Inicio</NavLink>
+            <Link
+              to="inicio"
+              smooth={true}
+              duration={500}
+              offset={-60}
+              className="nav-link"
+              onClick={closeMenu}
+            >
+              Inicio
+            </Link>
           </li>
-
-           <li className="nav-item">
-            <NavLink to="/servicios" className="nav-link">Servicios</NavLink>
-          </li>
-
           <li className="nav-item">
-            <NavLink to="/nosotros" className="nav-link">Sobre nosotros</NavLink>
+            <Link
+              to="servicios"
+              smooth={true}
+              duration={500}
+              offset={-60}
+              className="nav-link"
+              onClick={closeMenu}
+            >
+              Servicios
+            </Link>
           </li>
-
           <li className="nav-item">
-            <NavLink to="/resenas" className="nav-link">Resenas</NavLink>
+            <Link
+              to="sobre-nosotros"
+              smooth={true}
+              duration={500}
+              offset={-60}
+              className="nav-link"
+              onClick={closeMenu}
+            >
+              Sobre Nosotros
+            </Link>
           </li>
-
-
           <li className="nav-item">
-            <NavLink to="/contacto" className="nav-link">Contacto</NavLink>
+            <Link
+              to="reseñas"
+              smooth={true}
+              duration={500}
+              offset={-60}
+              className="nav-link"
+              onClick={closeMenu}
+            >
+              Reseñas
+            </Link>
           </li>
-
-
-
+          <li className="nav-item">
+            <Link
+              to="contacto"
+              smooth={true}
+              duration={500}
+              offset={-60}
+              className="nav-link"
+              onClick={closeMenu}
+            >
+              Contacto
+            </Link>
+          </li>
         </ul>
       </nav>
+
     </div>
   )
 }

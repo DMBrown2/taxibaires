@@ -57,10 +57,9 @@ export default function SobreNosotros() {
   ];
 
   return (
-
-    <>
    
     <section id="sobre-nosotros" className="sobre-nosotros-section">
+
       <div className="sobre-nosotros-container">
         <SectionTitle
           titulo="Sobre Nosotros"
@@ -87,7 +86,6 @@ export default function SobreNosotros() {
 
         
       </div>
-    </section>          
 
       <div className="porque-elegirnos-container">
         <SectionTitle
@@ -97,7 +95,7 @@ export default function SobreNosotros() {
 
         <div className="caracteristicas-grid">
           {caracteristicas.map((item, index) => (
-              <div key={index} className="caracteristica-card">
+            <div key={index} className="caracteristica-card">
               <FontAwesomeIcon icon={item.icon} className="icono" />
               <h4>{item.titulo}</h4>
               <p>{item.descripcion}</p>
@@ -112,7 +110,6 @@ export default function SobreNosotros() {
         </div>
       </div>
 
-
-</>
+</section>          
   );
 }

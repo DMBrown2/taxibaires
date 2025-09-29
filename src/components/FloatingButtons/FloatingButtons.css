@@ -1,0 +1,49 @@
+.btn-float {
+  position: fixed;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  z-index: 200;
+  font-size: 1.5rem;
+  transition: box-shadow 0.2s;
+}
+
+.btn-float:hover {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.28);
+}
+
+.btn-wsp {
+  background: #25d366;
+  color: #fff;
+  bottom: 24px;
+  right: 24px;
+}
+
+.btn-top {
+  background: #fff;
+  color: var(--color-terciario);
+  bottom: 24px;
+  left: 24px;
+}
+
+@media (max-width: 600px) {
+  .btn-float {
+    width: 42px;
+    height: 42px;
+    font-size: 1.2rem;
+  }
+  .btn-wsp {
+    bottom: 16px;
+    right: 16px;
+  }
+  .btn-top {
+    bottom: 16px;
+    left: 16px;
+  }
+}
