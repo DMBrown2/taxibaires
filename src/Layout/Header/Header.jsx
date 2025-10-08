@@ -57,8 +57,10 @@ export default function Header() {
                   onClick={closeMenu}
                   >
                   {item
-                    .replace("-", " ")
-                    .replace((l) => l.toUpperCase())}
+                  .replace("-", " ")
+                  .replace(/\b\w/g, (l) => l.toUpperCase())}
+
+
                 </Link>
               </li>
             )

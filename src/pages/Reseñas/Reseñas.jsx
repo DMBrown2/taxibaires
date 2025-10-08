@@ -113,7 +113,7 @@ export default function Reseñas() {
       </div>
 
       <div className="ver-mas-container">
-        <Button variant="outline" size="small" >
+        <Button variant="outline" size="big" >
           Ver más reseñas
         </Button>
 

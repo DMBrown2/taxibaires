@@ -26,3 +26,7 @@ body {
     font-family: var(--font);
 }
 
+:target {
+  scroll-margin-top: 60px; /* mismo alto que tu header */
+}
+

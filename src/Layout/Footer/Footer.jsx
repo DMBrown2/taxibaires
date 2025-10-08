@@ -25,13 +25,13 @@ export default function Footer() {
 
         {/* Contacto */}
         <div className="footer-contact">
-          <a href="https://wa.me/XXXXXXXXXXX" target="_blank" rel="noopener noreferrer">
+          <a href="https://wa.me/+5491132681603" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faWhatsapp} className="footer-icon" />
           </a>
-          <a href="mailto:contacto@miempresa.com">
+          <a href="mailto:info.taxibaires@gmail.com">
             <FontAwesomeIcon icon={faEnvelope} className="footer-icon" />
           </a>
-          <a href="https://instagram.com/XXXXX" target="_blank" rel="noopener noreferrer">
+          <a href="" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faInstagram} className="footer-icon" />
           </a>
         </div>

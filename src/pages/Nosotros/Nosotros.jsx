@@ -28,7 +28,7 @@ export default function SobreNosotros() {
     },
     {
       nombre: "Chevrolet Spin",
-      descripcion: "Vehículo familiar con amplio espacio para equipaje.",
+      descripcion: "Confortable y espaciosa, ideal para viajes familiares o traslados urbanos.",
       imagen: ChevroletSpin,
     },
 
