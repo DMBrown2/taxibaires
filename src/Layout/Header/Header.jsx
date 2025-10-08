@@ -56,9 +56,11 @@ export default function Header() {
                   className="nav-link"
                   onClick={closeMenu}
                   >
-                  {item
-                  .replace("-", " ")
-                  .replace(/\b\w/g, (l) => l.toUpperCase())}
+                   {item
+                    .replace("-", " ")
+                    .replace(/^\w/, (l) => l.toUpperCase())}
+
+
 
 
                 </Link>
