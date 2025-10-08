@@ -10,19 +10,19 @@ export default function Servicios() {
     {
       titulo: "Traslados al Aeropuerto",
       descripcion:
-        "Servicio puntual y seguro hacia y desde Ezeiza.",
+        "Ezeiza o Aeroparque, te llevamos y te buscamos. Comenzá y terminá tu viaje con la tranquilidad de un servicio puntual y confiable.",
       imagen: fotoAeropuerto,
     },
     {
       titulo: "City Tours",
       descripcion:
-        "Recorridos por puntos turísticos de la ciudad con choferes experimentados.",
+        "Descubrí Buenos Aires. Recorré sus rincones más emblemáticos junto a choferes profesionales y bilingües.",
       imagen: fotoTurismo,
     },
       {
-      titulo: "Viajes larga distancia",
+      titulo: "Viajes de larga distancia",
       descripcion:
-        "Traslados cómodos y seguros a destinos fuera de la ciudad.",
+        "Traslados cómodos y seguros fuera de la ciudad. Disfrutá el trayecto, nosotros nos ocupamos del resto.",
       imagen: fotoLargaDistancia,
     },
   ];
@@ -53,9 +53,15 @@ export default function Servicios() {
         </div>
 
         <div className="servicios-cta">
-  <Button variant="primary" onClick={() => window.location.href = "#contacto"}>
-    Consultá otros destinos
-  </Button>
+            <a 
+          href="https://wa.me/+5491132681603"
+          target='_blank'
+            >
+
+          <Button variant="primary">
+            CONSULTÁ POR OTROS SERVICIOS
+          </Button>
+            </a>
 </div>
 
       </div>

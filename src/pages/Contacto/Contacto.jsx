@@ -19,7 +19,7 @@ export default function Contacto() {
         <div className="contacto-grid">
           {/* WhatsApp */}
           <a
-            href="https://wa.me/XXXXXXXXXXX"
+            href="https://wa.me/+5491132681603"
             target="_blank"
             rel="noopener noreferrer"
             className="contacto-card"
@@ -39,7 +39,7 @@ export default function Contacto() {
 
           {/* Instagram */}
           <a
-            href="https://instagram.com/XXXXX"
+            href=""
             target="_blank"
             rel="noopener noreferrer"
             className="contacto-card"
@@ -53,7 +53,7 @@ export default function Contacto() {
           <a href="mailto:contacto@miempresa.com" className="contacto-card">
             <FontAwesomeIcon icon={faEnvelope} className="contacto-icon" />
             <p className="contacto-label">Email</p>
-            <p className="contacto-link">contacto-taxibaires@gmail.com</p>
+            <p className="contacto-link">info.taxibaires@gmail.com</p>
           </a>
         </div>
       </div>

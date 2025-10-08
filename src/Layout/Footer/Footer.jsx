@@ -11,7 +11,7 @@ export default function Footer() {
         {/* Logo / Nombre */}
         <div className="footer-brand">
           <h3>Taxi Baires</h3>
-          <p>Tu taxi de confianza</p>
+          <p>Rápido, seguro y siempre a tu lado.</p>
         </div>
 
         {/* Navegación */}

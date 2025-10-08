@@ -85,7 +85,7 @@ export default function Reseñas() {
       <div className="reseñas-container">
         <SectionTitle
           titulo="Reseñas"
-          descripcion="La experiencia de nuestros clientes nos avala. Descubrí lo que dicen sobre nuestro servicio."
+          descripcion="Descubrí lo que dicen los clientes de nuestro servicio."
         />
 
      <div className="reseñas-scroll" ref={scrollRef}>

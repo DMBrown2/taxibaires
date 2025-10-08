@@ -2,9 +2,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faClock, faShieldAlt, faCarSide, faMoneyCheck } from "@fortawesome/free-solid-svg-icons"; 
 import "./Nosotros.css";
 import SectionTitle from "../../components/SectionTitle/SectionTitle";
-import Corolla from "../../assets/images/flota/corolla.jpeg";
+// import Corolla from "../../assets/images/flota/corolla.jpeg";
 import Van from "../../assets/images/flota/van.avif";
-import Kangoo from "../../assets/images/flota/kangoo.jpg";
+import Kangoo from "../../assets/images/flota/kangoo.jpeg";
 import ChevroletSpin from "../../assets/images/flota/chevrolet-spin.avif";
 import Button from "../../components/Button/Button";
 
@@ -12,10 +12,15 @@ import Button from "../../components/Button/Button";
 export default function SobreNosotros() {
   const flota = [
     {
-      nombre: "Toyota Corolla",
-      descripcion: "Cómodo y eficiente, ideal para traslados urbanos y aeropuerto.",
-      imagen: Corolla,
+      nombre: "Kangoo",
+      descripcion: "Vehículo familiar con amplio espacio para equipaje.",
+      imagen: Kangoo,
     },
+    // {
+    //   nombre: "Toyota Corolla",
+    //   descripcion: "Cómodo y eficiente, ideal para traslados urbanos y aeropuerto.",
+    //   imagen: Corolla,
+    // },
     {
       nombre: "Camioneta Van",
       descripcion: "Espacioso y elegante, perfecto para viajes grupales.",
@@ -26,11 +31,7 @@ export default function SobreNosotros() {
       descripcion: "Vehículo familiar con amplio espacio para equipaje.",
       imagen: ChevroletSpin,
     },
-    {
-      nombre: "Kangoo",
-      descripcion: "Vehículo familiar con amplio espacio para equipaje.",
-      imagen: Kangoo,
-    },
+
   ];
 
   const caracteristicas = [
@@ -63,7 +64,9 @@ export default function SobreNosotros() {
       <div className="sobre-nosotros-container">
         <SectionTitle
           titulo="Sobre Nosotros"
-          descripcion="Somos una flota de taxis comprometida con la seguridad, comodidad y puntualidad de cada viaje. Con vehículos modernos y choferes profesionales, nos adaptamos a todas tus necesidades."
+          descripcion="Somos una empresa familiar con más de 15 años de experiencia en el traslado de pasajeros.
+          Nuestra propia flota de taxis y vans nos permite garantizar seguridad, comodidad y atención personalizada.
+          Nos adaptamos a lo que necesitas, siempre."
           />
 
         <div className="flota-grid">
@@ -79,9 +82,16 @@ export default function SobreNosotros() {
         </div>
 
         <div className="nosotros-cta">
+          <a 
+          href="https://wa.me/+5491132681603"
+          target='_blank'
+          rel='"noopener noreferrer"'>
+
           <Button variant="primary" size="medium">
           Reservá tu viaje
-        </Button>
+          </Button>
+
+          </a>
         </div>
 
         
@@ -90,7 +100,7 @@ export default function SobreNosotros() {
       <div className="porque-elegirnos-container">
         <SectionTitle
           titulo="¿Por qué elegirnos?"
-          descripcion="Elegirnos significa optar por un servicio de transporte confiable, seguro y cómodo. Nos enorgullece ofrecer una experiencia de viaje excepcional, adaptada a tus necesidades específicas."
+          descripcion="Cada viaje es una experiencia segura y sin complicaciones."
           />
 
         <div className="caracteristicas-grid">
@@ -101,12 +111,6 @@ export default function SobreNosotros() {
               <p>{item.descripcion}</p>
             </div>
           ))}
-        </div>
-
-           <div className="porqueelegirnos-cta">
-          <Button variant="primary" size="medium">
-          Contactar
-        </Button>
         </div>
       </div>
 

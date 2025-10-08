@@ -1,13 +1,11 @@
-import { useRef } from 'react';
-import './Header.css';
-import { Link } from 'react-scroll';
-import logo from '../../assets/images/header/logo.jpg';
-
+import { useRef } from "react";
+import { Link } from "react-scroll";
+import "./Header.css";
+import logo from "../../assets/images/header/logo.jpeg";
 
 export default function Header() {
-const burgerRef = useRef();
+  const burgerRef = useRef();
 
-  // Función para cerrar el menú
   const closeMenu = () => {
     if (burgerRef.current) {
       burgerRef.current.checked = false;
@@ -15,95 +13,61 @@ const burgerRef = useRef();
   };
 
   return (
-    <div className="main-header">
-      {/* MENU HAMBURGUESA  */}
-      <input type="checkbox" id="burger" className="input-burger" ref={burgerRef} />
-      <label className="burger-container" htmlFor="burger">
-        <div className="burger" />
-      </label>
-      {/* CLAIM + LOGO + USER INFO  */}
-      <div className="contenedor-logo">
-        <a href="#inicio" className="nav-link">
-          <img
-            className="logo"
-            src={logo}
-            alt="LOGO"
-          />
+    <header className="main-header">
+
+      <div className="header-container">
+
+
+      {/* LOGO */}
+ 
+        <a className="logo-container" href="#inicio">
+          <img src={logo} alt="Logo" className="logo" />
         </a>
-      </div>
+    
 
-      {/* Overlay para cerrar el menú */}
-      <div
-        className="nav-overlay"
-        onClick={closeMenu}
-      />
 
-    {/* MAIN NAV */}
+      {/* MENU HAMBURGUESA */}
+      <input
+        type="checkbox"
+        id="burger"
+        className="input-burger"
+        ref={burgerRef}
+        />
+      <label htmlFor="burger" className="burger-container">
+        <span className="burger"></span>
+      </label>
+
+
+      {/* OVERLAY para cerrar menú haciendo clic fuera */}
+      <div className="nav-overlay" onClick={closeMenu}></div>
+      
+
+      {/* NAVEGACIÓN */}
       <nav className="main-nav">
         <ul className="nav-list">
-          <li className="nav-item">
-            <Link
-              to="inicio"
-              smooth={true}
-              duration={500}
-              offset={-60}
-              className="nav-link"
-              onClick={closeMenu}
-            >
-              Inicio
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link
-              to="servicios"
-              smooth={true}
-              duration={500}
-              offset={-60}
-              className="nav-link"
-              onClick={closeMenu}
-            >
-              Servicios
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link
-              to="sobre-nosotros"
-              smooth={true}
-              duration={500}
-              offset={-60}
-              className="nav-link"
-              onClick={closeMenu}
-            >
-              Sobre Nosotros
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link
-              to="reseñas"
-              smooth={true}
-              duration={500}
-              offset={-60}
-              className="nav-link"
-              onClick={closeMenu}
-            >
-              Reseñas
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link
-              to="contacto"
-              smooth={true}
-              duration={500}
-              offset={-60}
-              className="nav-link"
-              onClick={closeMenu}
-            >
-              Contacto
-            </Link>
-          </li>
+          {["inicio", "servicios", "sobre-nosotros", "reseñas", "contacto"].map(
+            (item) => (
+              <li className="nav-item" key={item}>
+                <Link
+                  to={item}
+                  smooth={true}
+                  duration={500}
+                  offset={-60}
+                  className="nav-link"
+                  onClick={closeMenu}
+                  >
+                  {item
+                    .replace("-", " ")
+                    .replace((l) => l.toUpperCase())}
+                </Link>
+              </li>
+            )
+          )}
         </ul>
       </nav>
 
+
     </div>
-  )
+    </header>
+  );
 }
