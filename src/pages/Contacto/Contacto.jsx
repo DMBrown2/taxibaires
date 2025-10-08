@@ -50,7 +50,7 @@ export default function Contacto() {
           </a>
 
           {/* Email */}
-          <a href="mailto:contacto@miempresa.com" className="contacto-card">
+          <a href="mailto:info.taxibaires@gmail.com" className="contacto-card">
             <FontAwesomeIcon icon={faEnvelope} className="contacto-icon" />
             <p className="contacto-label">Email</p>
             <p className="contacto-link">info.taxibaires@gmail.com</p>
