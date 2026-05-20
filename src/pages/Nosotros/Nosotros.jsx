@@ -77,7 +77,7 @@ export default function SobreNosotros() {
 
         <div className="nosotros-cta">
           <a 
-          href="https://wa.me/+5491157678654"
+          href="/404"
           target='_blank'
           rel='"noopener noreferrer"'>
 

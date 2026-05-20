@@ -26,7 +26,7 @@ export default function Contacto() {
           >
             <FontAwesomeIcon icon={faPhone} className="contacto-icon" />
             <p className="contacto-label">WhatsApp</p>
-            <p className="contacto-link">+54 9 11 5767-8654</p>
+            {/* <p className="contacto-link">+54 9 11 5767-8654</p> */}
           </a>
 
           {/* Horarios */}
