@@ -24,7 +24,7 @@ export default function FloatingButtons() {
       {/* WhatsApp: siempre visible, abajo derecha */}
       <a
         className="btn-float btn-wsp"
-        href="/404"
+        href="https://wa.me/+5491156432239"
         target="_blank"
         rel="noopener noreferrer"
         aria-label="WhatsApp"

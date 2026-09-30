@@ -55,7 +55,7 @@ export default function Servicios() {
 
         <div className="servicios-cta">
             <a 
-          href="/404"
+          href="https://wa.me/+5491156432239"
           target='_blank'
             >
 

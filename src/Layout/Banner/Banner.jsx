@@ -14,7 +14,7 @@ export default function Banner() {
 
           <a 
           className='banner-cta'
-          href="/404"
+          href="https://wa.me/+5491156432239"
           target='_blank'
           rel='"noopener noreferrer"'>
 

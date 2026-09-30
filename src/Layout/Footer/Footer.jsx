@@ -25,7 +25,7 @@ export default function Footer() {
 
         {/* Contacto */}
         <div className="footer-contact">
-          <a href="/404" target="_blank" rel="noopener noreferrer">
+          <a href="https://wa.me/+5491156432239" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faWhatsapp} className="footer-icon" />
           </a>
           <a href="mailto:info.taxibaires@gmail.com">
